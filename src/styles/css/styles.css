@@ -15,18 +15,6 @@ header {
     width: 100%;
 }
 
-main {
-    /* width: 100%; */
-}
-
-
-/* .container {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-} */
-
 .header-block {
     font-family: LatoBlack;
     font-style: normal;
@@ -149,7 +137,4 @@ main {
     .header-content {
         font-size: 30px;
     }
-    /* main {
-        padding: 20px;
-    } */
 }
