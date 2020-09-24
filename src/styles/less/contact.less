@@ -1,0 +1,183 @@
+@pictures-path: "../../assets/img/slider/pictures";
+.contact {
+    position: relative;
+    padding: 122px 20px 140px 20px;
+    background-image: url("@{pictures-path}/Rectangle.png");
+    background-size: cover;
+    background-position: center center;
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        z-index: 1;
+    }
+
+    .contact__container {
+        max-width: 1110px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 2;
+      .contact__content{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: flex-start;
+          .contact__feedback-data{
+                max-width: 521px;
+              p.contact__feedback-header{
+                margin: 0;
+                font-family: Merriweather;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 48px;
+                line-height: 69px;
+                color: #ffffff;
+              }
+              p.content__feefback-content{
+                margin: 60px 0 0 0;
+                font-family: LatoLight;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 25px;
+                color: #FFFFFF;
+              }
+              .content__communication-methods{
+                  margin: 79px 0 0 0;
+                  position: relative;
+                  display: flex;
+                  flex-wrap: wrap;
+                  flex-direction: row;
+                  align-items: center;
+                  justify-content: start;
+                  font-family: Lato;
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 21px;
+                  line-height: 29px;
+                  color: #ffffff;
+                  span.content__info-text{
+                    font-family: LatoLight;
+                    font-style: normal;
+                    font-weight: 300;
+                    font-size: 21px;
+                    line-height: 29px;
+                    color: #ffffff;
+                  }
+                  .content__communication-phone{
+                      padding-top: 20px;
+                      min-width: 215px;
+                      padding-right: 20px;
+                      display: flex;
+                      flex-direction: row;
+                      flex-wrap: nowrap;
+                      align-items: center;
+                      justify-content: space-between;
+                      img.content__info-img{
+                          margin-right: 15px;
+                      }
+                      span.content__info-text{
+                          a{
+                              text-decoration: none;
+                              color: #ffffff;
+                            }
+                      }
+                  }
+                  .content__communication-mail{
+                      padding-top: 20px;
+                      min-width: 215px;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: nowrap;
+                        align-items: center;
+                        justify-content: space-between;
+                        img.content__info-img{
+                            margin-right: 15px;
+                        }
+                        span.content__info-text{
+                            a{
+                                text-decoration: none;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
+            }
+          .contact__feedback-form{
+              max-width: 540px;
+              span.feedpack-form__user-input-head{
+                font-family: LatoMedium;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: #ffffff;
+              }
+              .feedpack-form__user-personal-data{
+                  display: flex;
+                  flex-wrap: wrap;
+                  flex-direction: row;
+                  justify-content: space-between;
+
+                  .feedpack-form__user-name{
+                    padding-right: 30px; 
+                    min-width: 202px;
+                    display: flex;
+                    justify-content: start;
+                    flex-direction: column;
+                    .feedpack-form__input{
+                        padding-top: 15px;
+                        min-width: 202px;
+                        max-width: 245px;
+                    }
+                  }
+                  .feedpack-form__user-surname{
+                    min-width: 202px;
+                    display: flex;
+                    justify-content: start;
+                    flex-direction: column;
+                    .feedpack-form__input{
+                        padding-top: 15px;
+                        min-width: 202px;
+                        max-width: 245px;
+                    }
+                  }
+              }
+              .feedpack-form__user-message{
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: start;
+                  padding-top: 35px;
+                  padding-bottom: 50px;
+                  .feedpack-form__textarea{
+                       margin-top: 15px;
+                      height: 84px;
+                      width: 100%;
+                  }
+              }
+              .button__accent-color{
+                  margin: 0;
+                  display: block;
+                  float: right;
+              }
+          }
+      }
+    }
+}
+@media all and (max-width: 1095px) {
+    .contact__feedback-data{
+        margin: 0 auto!important;
+    }
+    .content__communication-methods{
+        margin-top: 0!important;
+    }
+    .contact__feedback-form{
+        margin: 0 auto!important;
+        margin-top: 60px!important;
+    }
+}

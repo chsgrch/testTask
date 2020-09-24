@@ -1,0 +1,109 @@
+.about-us {
+  padding: 140px 20px;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 1110px;
+    min-height: 564px;
+    margin: 0 auto;
+
+    .about-us__description {
+      h2 {
+        margin: 0 0 40px 0;
+      }
+      clear: both;
+      max-width: 500px;
+      .header-content {
+        margin-bottom: 60px;
+        .header-content__item_company-name {
+          color: #2c60a3;
+        }
+      }
+    }
+    .about-us__indicators {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+      grid-template-rows: repeat(auto-fit, minmax(255px, 255px));
+      grid-gap: 30px;
+      max-width: 550px;
+      margin-top: 24px;
+      .about-us__item {
+        white-space: nowrap;
+        width: 255px;
+        height: 255px;
+        background: #ebebeb;
+        margin: 0 auto;
+        .about-us__item-count,
+        .about-us__item-description {
+          margin-top: 30px;
+          margin-left: 40px;
+        }
+        .about-us__item-count {
+          font-family: LatoBlack;
+          font-weight: 900;
+          font-style: normal;
+          font-size: 55px;
+          line-height: 66px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #000000;
+        }
+        .about-us__item-description {
+          font-family: Lato;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 18px;
+          color: #000000;
+        }
+        .about-us__item-link {
+          font-family: Lato;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 17px;
+          color: #005fa3;
+        }
+        a.about-us__item-link {
+          margin-top: 47px;
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .about-us {
+    .container {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      .about-us__description,
+      .about-us__indicators {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .about-us{
+    padding: 70px 20px!important;
+    h2.header-block{
+      margin-bottom: 50px!important;
+    }
+    .header-content{
+      line-height: 1.3!important;
+      margin-bottom: 0!important;
+    }
+    p.about-us__content{
+      margin: 50px 0 0 0!important;
+    }
+    .about-us__indicators{
+      margin-top: 50px!important;
+    }
+  }
+}
